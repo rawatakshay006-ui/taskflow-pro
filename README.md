@@ -23,9 +23,19 @@ A modern task management web application built using HTML, CSS, and JavaScript.
 - JavaScript (ES6)
 - Local Storage API
 
-## Screenshots
+## 📸 Screenshots
 
-(Add screenshots after uploading to GitHub.)
+### ☀️ Light Mode
+
+![Light Mode](screenshots/light-mode.png)
+
+### 🌙 Dark Mode
+
+![Dark Mode](screenshots/dark-mode.png)
+
+### 🗑️ Delete Confirmation
+
+![Delete Modal](screenshots/delete-modal.png)
 
 ## Installation
 
