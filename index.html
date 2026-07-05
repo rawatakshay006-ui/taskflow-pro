@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+  </head>
+  <body>
+    <header>
+      <h1>TaskFlow Pro</h1>
+      <p>Organize your tasks efficiently</p>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+    <main>
+      <section id="task-section">
+        <form id="task-form">
+          <label for="task-input">Task Name:</label>
+          <input
+            type="text"
+            id="task-input"
+            required
+            placeholder="Enter your task"
+          />
+          <label for="task-priority">Priority:</label>
+          <select id="task-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <label for="task-date">Due Date:</label>
+          <input type="date" id="task-date" />
+          <button type="submit" id="add-task-btn">Add Task</button>
+        </form>
+        <input type="text" id="search-input" placeholder="🔍Search tasks..." />
+        <h2>My Tasks</h2>
+        <p id="empty-message">📝 No tasks yet. Add your first task!</p>
+        <ul id="task-list"></ul>
+      </section>
+    </main>
+    <div id="delete-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Delete Task</h2>
+        <p id="delete-message"></p>
+
+        <div class="modal-buttons">
+          <button id="cancel-delete">Cancel</button>
+          <button id="confirm-delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
