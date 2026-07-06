@@ -198,7 +198,12 @@ if (savedTheme === "dark") {
   themeToggle.textContent = "☀ Light Mode";
 }
 themeToggle.addEventListener("click", function () {
-  document.body.classList.toggle("dark");
+  document.body.style.opacity = "0.85";
+
+  setTimeout(function () {
+    document.body.classList.toggle("dark");
+    document.body.style.opacity = "1";
+  }, 120);
 
   if (document.body.classList.contains("dark")) {
     themeToggle.textContent = "☀ Light Mode";

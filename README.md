@@ -37,15 +37,19 @@ A modern task management web application built using HTML, CSS, and JavaScript.
 
 ![Delete Modal](screenshots/delete-modal.png)
 
-## Installation
+## 🚀 Installation
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/taskflow-pro.git
+git clone https://github.com/rawatakshay006-ui/taskflow-pro.git
 ```
 
-2. Open `index.html`
+2. Open the project folder.
+
+3. Open `index.html` in your browser.
+
+Or simply visit the live demo (GitHub Pages).
 
 ## Author
 
