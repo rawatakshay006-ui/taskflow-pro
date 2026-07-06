@@ -191,25 +191,21 @@ searchInput.addEventListener("input", function () {
     }
   });
 });
-const savedTheme = localStorage.getItem("theme");
 
-if (savedTheme === "dark") {
-  document.body.classList.add("dark");
-  themeToggle.textContent = "☀ Light Mode";
-}
 themeToggle.addEventListener("click", function () {
   document.body.style.opacity = "0.85";
 
   setTimeout(function () {
     document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      themeToggle.textContent = "☀ Light Mode";
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeToggle.textContent = "🌙 Dark Mode";
+      localStorage.setItem("theme", "light");
+    }
+
     document.body.style.opacity = "1";
   }, 120);
-
-  if (document.body.classList.contains("dark")) {
-    themeToggle.textContent = "☀ Light Mode";
-    localStorage.setItem("theme", "dark");
-  } else {
-    themeToggle.textContent = "🌙 Dark Mode";
-    localStorage.setItem("theme", "light");
-  }
 });
